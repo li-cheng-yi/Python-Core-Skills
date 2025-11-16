@@ -26,10 +26,10 @@ for item in invalid_chars:
             break
     if b == 1:
         break
-#检查邮箱是否包含"@"符号且只包含一个"@",邮箱长度是否在5-50个字符之间,不能以"@"或"."开头
-c=email.find('@')
+#检查邮箱是否包含"@"符号且只包含一个"@",邮箱长度是否在5-50个字符之间,不能以"@"或"."开头或结尾
+c=email1.find('@')
 a=email1.count('@')
-if len(email1)<5 or len(email1)>50 or c==0 or a!=1:
+if len(email1)<5 or len(email1)>50 or c==0  or c == len(email1)-1 or a!=1:
     print('邮箱错误')
     yanzheng=1
 #检查手机号是否为数字且11位

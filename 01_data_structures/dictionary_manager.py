@@ -1,5 +1,5 @@
 #创建一个包含5个学生信息的字典，键为学生姓名，值为成绩（0-100的整数）
-student_information={'张学良':95,'张作霖':90,'工藤新一':81,'蔡徐坤':50,'余则成':63}
+student_information={'张学良':95,'张作霖':90,'工藤新一':81,'毛利兰':50,'马大帅':63}
 #遍历学生成绩字典
 for key,value in student_information.items():
     print('学生:',key,'-','成绩:',value)
